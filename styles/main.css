@@ -1,0 +1,1143 @@
+/*===头部样式开始===*/
+#header {
+    height: 105px;
+
+    background: url('../images/headerbg.png') repeat-x scroll 0 0 #fff;
+}
+
+#header .contWidth {
+    position: relative;
+    z-index: 100;
+
+    width: 990px;
+    height: 105px;
+    margin: 0 auto;
+}
+
+#header .logo {
+    line-height: 80px;
+
+    float: left;
+
+    margin: 0 0 0 10px;
+
+    color: #fff;
+}
+
+#header .search {
+    position: absolute;
+    top: 20px;
+    left: 198px;
+}
+
+#inputSearch {
+    font-size: 14px;
+
+    width: 200px;
+    height: 17px;
+    padding: 3px 6px 5px 6px;
+
+    color: #999;
+    border: 1px solid #babebf;
+}
+
+#inputSearch.focus {
+    border: 1px solid #00a5ff;
+}
+
+/* 切换皮肤控件样式 */
+#skin {
+    float: right;
+
+    width: 120px;
+    margin: 10px;
+    padding: 4px;
+}
+
+#skin li {
+    display: block;
+    float: left;
+    overflow: hidden;
+
+    width: 15px;
+    height: 15px;
+    margin-right: 4px;
+
+    cursor: pointer;
+    /*缩进-9999px，让文字显示到看不到的区域*/
+    text-indent: -9999px;
+
+    background-image: url('../images/theme.gif');
+}
+
+/*使用同一张图片的不同位置来显示不同内容，可以节省网站的HTTP请求*/
+#skin_0 {
+    background-position: 0 0;
+}
+
+#skin_1 {
+    background-position: 15px 0;
+}
+
+#skin_2 {
+    background-position: 35px 0;
+}
+
+#skin_3 {
+    background-position: 55px 0;
+}
+
+#skin_4 {
+    background-position: 75px 0;
+}
+
+#skin_5 {
+    background-position: 95px 0;
+}
+
+#skin_0.selected {
+    background-position: 0 15px;
+}
+
+#skin_1.selected {
+    background-position: 15px 15px;
+}
+
+#skin_2.selected {
+    background-position: 35px 15px;
+}
+
+#skin_3.selected {
+    background-position: 55px 15px;
+}
+
+#skin_4.selected {
+    background-position: 75px 15px;
+}
+
+#skin_5.selected {
+    background-position: 95px 15px;
+}
+
+/*导航样式开始*/
+.mainNav {
+
+    position: absolute;
+    z-index: 100;
+    top: 68px;
+    left: 0;
+
+    width: 990px;
+    /*height与line-height相同可以使导航栏文字垂直居中*/
+    height: 37px;
+    line-height: 37px;
+    background-color: #4a4a4a;
+}
+
+.mainNav .nav {
+    display: inline;
+    float: left;
+
+    margin-left: 25px;
+}
+
+.mainNav ul li {
+    position: relative;
+    z-index: 100;
+
+    display: inline;
+    float: left;
+
+    margin-right: 14px;
+}
+
+.mainNav ul li a {
+    font-size: 14px;
+    font-weight: 700;
+
+    display: block;
+
+    padding: 0 8px;
+
+    color: #fff;
+}
+
+.mainNav ul li a:hover {
+    background: none;
+}
+
+/* 二级菜单 */
+.snNav {
+    position: absolute;
+    z-index: 1000;
+    top: 37px;
+    left: 0;
+
+    /*二级菜单默认不显示*/
+    display: none;
+    overflow: hidden;
+
+    width: 474px;
+
+    border: 1px solid #b1b1b1;
+    border-top: 0;
+    background: #fff;
+}
+
+.snNav .subitem {
+    float: left;
+
+    width: 450px;
+    height: auto !important;
+    min-height: 100px;
+    padding: 10px 12px;
+}
+
+.snNav .subitem dl {
+    float: left;
+    overflow: hidden;
+
+    padding: 8px 0;
+
+    border-top: 1px dashed #c4c4c4;
+}
+
+.snNav .subitem .fore {
+    padding-top: 0;
+
+    border-top-style: none;
+}
+
+.snNav .subitem dt {
+    font-weight: bold;
+    line-height: 16px;
+
+    float: left;
+
+    width: 76px;
+    padding: 4px 3px;
+
+    text-align: center;
+}
+
+.snNav .subitem dt a {
+    font-size: 12px;
+    font-weight: 700;
+
+    padding: 0;
+
+    color: #000;
+}
+
+.snNav .subitem dd {
+    float: left;
+    overflow: hidden;
+
+    width: 364px;
+    padding: 0;
+}
+
+.snNav .subitem em {
+    /*不要用斜体显示*/
+    font-style: normal;
+    line-height: 14px;
+
+    float: left;
+
+    height: 14px;
+    margin: 5px 0;
+    padding: 0 8px;
+    /*显示二级菜单每个链接右边的线*/
+    border-right: 1px solid #ccc;
+}
+
+.snNav .subitem em a {
+    font-size: 12px;
+    font-weight: normal;
+
+    padding: 0;
+    /*强制链接在同一行显示*/
+    white-space: nowrap;
+
+    color: #666;
+}
+
+.snNav .subitem em.noborder {
+    /*最右边链接不显示右边的线*/
+    border-right: 0 none;
+}
+
+/*===conttent样式开始=== */
+#content {
+    position: relative;
+
+    clear: left;
+
+    width: 990px;
+    margin: 0 auto;
+}
+
+.suning {
+    overflow: hidden;
+
+    height: 560px;
+    padding: 10px 0;
+}
+
+/* 左侧边栏商品分类 */
+#snCatalog {
+    float: left;
+    overflow: hidden;
+
+    width: 185px;
+    height: 560px;
+    margin-right:11px;
+    border:1px solid #6e6e6e;
+}
+
+#snCatalog h2 {
+    font-size: 12px;
+    line-height: 30px;
+
+    height: 30px;
+
+    text-indent: 13px;
+
+    color: #fff;
+    background-color: #6e6e6e;
+}
+
+.snCatainfo {
+    overflow: hidden;
+
+    width: 165px;
+    height: 524px;
+    padding: 5px 10px 0;
+
+
+}
+
+.snCatainfo h3 {
+    line-height: 24px;
+
+    width: 164px;
+    height: 24px;
+    /*底部分割线*/
+    border-bottom: 1px solid #eee;
+}
+
+.snCatainfo ul {
+    float: left;
+
+    padding: 0 2px 8px;
+}
+
+.snCatainfo li {
+    line-height: 24px;
+
+    position: relative;
+
+    float: left;
+    overflow: hidden;
+
+    width: 79px;
+    height: 24px;
+
+    color: #aeadae;
+}
+
+.snCatainfo li a {
+    color: #444;
+}
+
+.snCatainfo li a:hover {
+    text-decoration: none;
+
+    color: #00cc66;
+}
+/*促销标记*/
+.snCatainfo li a.promoted {
+    color: #f9044e;
+}
+/*热卖标记*/
+.snCatainfo li .hot {
+    position: absolute;
+    top: 0;
+
+    width: 79px;
+    height: 24px;
+
+    background: url('../images/hot.gif') no-repeat scroll 35px 0 transparent;
+}
+
+/* 轮播大图 */
+#snImageroll {
+    position: relative;
+
+    float: left;
+    overflow: hidden;
+
+    width: 550px;
+    height: 320px;
+    margin-right:11px;
+}
+
+#snImageroll img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#snImageroll div {
+    position: absolute;
+    bottom: 0;
+
+    float: left;
+    overflow: hidden;
+}
+
+#snImageroll div a {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+
+    width: 79px;
+    height: 32px;
+    margin-right: 1px;
+    padding: 5px 15px;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #444;
+    text-decoration: none;
+}
+
+#snImageroll div a em {
+    display: block;
+    overflow: hidden;
+
+    width: 79px;
+    height: 16px;
+
+    cursor: pointer;
+}
+
+#snImageroll .last {
+    width: 80px;
+    margin: 0;
+}
+/*轮播图展现的图片*/
+#snImageroll a.choosen {
+    color: #fff;
+    background: url('../images/adindex.gif') no-repeat center 39px #00cc66;
+}
+
+/* 最新动态 */
+#snNotice {
+    float: left;
+    overflow: hidden;
+
+    width: 230px;
+    height: 321px;
+}
+
+#snMiaosha {
+    float: left;
+    overflow: hidden;
+
+    width: 230px;
+    height: 176px;
+    margin-bottom: 10px;
+}
+/*旋转动画时长*/
+.SN_css3 img {
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -o-transition: 1s all;
+    transition: 1s all;
+}
+/*图片旋转360度*/
+.SN_css3:hover img {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+
+}
+
+#snNoticeInfo {
+    float: left;
+    overflow: hidden;
+
+    width: 228px;
+    height: 133px;
+
+    border: 1px solid #dfdfdf;
+}
+
+#snNoticeInfo h2 {
+    line-height: 23px;
+
+    height: 23px;
+
+    text-indent: 12px;
+
+    border-bottom: 1px solid #dfdfdf;
+}
+
+#snNoticeInfo ul {
+    float: left;
+
+    padding: 6px 2px 0 12px;
+}
+
+#snNoticeInfo li {
+    line-height: 20px;
+
+    overflow: hidden;
+
+    height: 20px;
+}
+
+#snNoticeInfo li a {
+    color: #666;
+}
+
+#snNoticeInfo li a:hover {
+    text-decoration: none;
+
+    color: #00cc66;
+}
+
+/* 品牌活动 */
+#snBrand {
+    float: left;
+    overflow: hidden;
+
+    width: 790px;
+    height: 230px;
+    margin: 10px 0 0;
+}
+
+#snBrandTab {
+    position: relative;
+
+    float: left;
+
+    width: 790px;
+    height: 29px;
+
+    border-bottom: 1px solid #e4e4e4;
+}
+
+#snBrandTab h2 {
+    line-height: 29px;
+
+    position: absolute;
+    left: 0;
+
+    width: 100px;
+    height: 29px;
+}
+
+#snBrandTab ul {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+#snBrandTab li {
+    float: left;
+
+    margin: 0 10px 0 0;
+}
+
+#snBrandTab li a {
+    line-height: 20px;
+
+    display: inline-block;
+
+    height: 20px;
+    padding: 0 10px;
+
+    color: #000;
+    background-color: #e4e4e4;
+}
+
+#snBrandTab .choosen {
+    padding-bottom: 3px;
+
+    background: url('../images/choosen.gif') no-repeat scroll 50% bottom transparent;
+}
+
+#snBrandTab .choosen a {
+    color: #fff;
+    outline: 0 none;
+    background-color: #00cc66;
+}
+
+#snBrandContent {
+    position: relative;
+
+    float: left;
+    overflow: hidden;
+
+    width: 790px;
+    height: 188px;
+    margin: 8px 5px;
+}
+
+#snBrandList {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 3200px;
+}
+
+#snBrandContent li {
+    position: relative;
+
+    float: left;
+    overflow: hidden;
+
+    width: 185px;
+    height: 188px;
+    padding: 0 5px;
+}
+
+#snBrandContent li img {
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+
+#snBrandContent li span {
+    font-size: 14px;
+    line-height: 24px;
+
+    position: absolute;
+    bottom: 0;
+
+    display: inline-block;
+    overflow: hidden;
+
+    width: 183px;
+    height: 24px;
+
+    text-align: center;
+
+    color: #666;
+    background-color: #efefef;
+}
+
+#snBrandContent li a {
+    color: #666;
+}
+
+#snBrandContent li a:hover {
+    text-decoration: none;
+
+    color: #0c6;
+}
+
+/* details.html */
+#snProitem {
+    display: inline;
+    float: left;
+
+    width: 312px;
+    height: 560px;
+}
+
+#snProitem .jqzoomWrap {
+    position: relative;
+
+    float: left;
+
+    padding: 0;
+
+    cursor: pointer;
+
+    border: 1px solid #bbb;
+}
+
+#snProitem span {
+    display: block;
+    clear: both;
+
+    width: 320px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-align: center;
+}
+
+#snProitem ul.imgList {
+    height: 80px;
+}
+
+#snProitem ul.imgList li {
+    float: left;
+
+    margin-right: 42px;
+}
+
+#snProitem ul.imgList li img {
+    width: 60px;
+    height: 60px;
+    padding: 1px;
+
+    cursor: pointer;
+
+    background: #eee;
+}
+
+#snProitem ul.imgList li img:hover {
+    padding: 1px;
+
+    background: #999;
+}
+
+.tab {
+    float: left;
+    clear: both;
+    overflow: hidden;
+
+    width: 310px;
+    height: 230px;
+}
+
+.tab .tab_menu {
+    clear: both;
+}
+
+.tab .tab_menu li {
+    float: left;
+
+    margin-right: 10px;
+    padding: 1px 6px;
+
+    list-style: none;
+
+    cursor: pointer;
+    text-align: center;
+
+    border: 1px solid #898989;
+    border-bottom: none;
+    background: #f1f1f1;
+}
+
+.tab .tab_menu li.hover {
+    background: #dfdfdf;
+}
+
+.tab .tab_menu li.selected {
+    color: #fff;
+    background: #0c6;
+
+}
+
+.tab .tab_box {
+    clear: both;
+    text-indent:24px;
+    border: 1px solid #898989;
+}
+
+.tab .hide {
+    display: none;
+}
+
+#snDetails {
+    display: inline;
+    float: left;
+    overflow: hidden;
+
+    width: 468px;
+}
+
+#snDetails .snProDetail {
+    padding: 0 10px 10px 10px;
+}
+
+#snDetails .snProDetailList li {
+    line-height: 25px;
+
+    float: left;
+
+    width: 100%;
+}
+
+#snDetails .snProDetailList strong.del {
+    font-size: 12px;
+
+    position: static;
+
+    text-decoration: line-through;
+
+    color: #404040;
+}
+
+#snDetails .snProDetailList strong {
+    font-weight: 400;
+}
+
+#snDetails .snProDetailList .tbDetailPrice strong {
+    font: 24px Tahoma, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+
+    padding-right: 5px;
+
+    vertical-align: middle;
+
+    color: #f50;
+}
+
+#snDetails .snProDetailList .color_change li,
+#snDetails .snProDetailList .pro_size li {
+    float: left;
+
+    width: 40px;
+    margin-right: 10px;
+}
+
+#snDetails .snProDetailList .color_change img {
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+
+    cursor: pointer;
+
+    border: 1px solid #bbb;
+    background: #eee;
+}
+
+#snDetails .snProDetailList .color_change img:hover,
+#snDetails .snProDetailList .color_change img.hover {
+    border: 1px solid #f60;
+}
+
+#snDetails .snProDetailList .pro_size li {
+    line-height: 30px;
+
+    display: block;
+    overflow: hidden;
+
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+
+    cursor: pointer;
+    text-align: center;
+
+    border: 1px solid #aaa;
+}
+
+#snDetails .snProDetailList .pro_size li.cur {
+    border: 1px solid #aaa;
+    background-color: #f60;
+}
+
+/* rating css */
+.rating {
+    position: relative;
+
+    clear: both;
+    overflow: hidden;
+
+    width: 80px;
+    height: 16px;
+    margin: 0 0 20px 0;
+    padding: 0;
+
+    list-style: none;
+
+    background: url(../images/star-matrix.gif) no-repeat 0 0;
+}
+
+.nostar {
+    background-position: 0 0;
+}
+
+.onestar {
+    background-position: 0 -16px;
+}
+
+.twostar {
+    background-position: 0 -32px;
+}
+
+.threestar {
+    background-position: 0 -48px;
+}
+
+.fourstar {
+    background-position: 0 -64px;
+}
+
+.fivestar {
+    background-position: 0 -80px;
+}
+
+ul.rating li {
+    float: left;
+
+    cursor: pointer;
+    text-indent: -999em;
+}
+
+ul.rating li a {
+    position: absolute;
+    z-index: 200;
+    top: 0;
+    left: 0;
+
+    width: 16px;
+    height: 16px;
+
+    text-decoration: none;
+}
+
+ul.rating li.one a {
+    left: 0;
+}
+
+ul.rating li.two a {
+    left: 16px;
+}
+
+ul.rating li.three a {
+    left: 32px;
+}
+
+ul.rating li.four a {
+    left: 48px;
+}
+
+ul.rating li.five a {
+    left: 64px;
+}
+
+ul.rating li a:hover {
+    z-index: 2;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 80px;
+    height: 16px;
+
+    background: url(../images/star-matrix.gif) no-repeat 0 0;
+}
+
+ul.rating li.one a:hover {
+    background-position: 0 -96px;
+}
+
+ul.rating li.two a:hover {
+    background-position: 0 -112px;
+}
+
+ul.rating li.three a:hover {
+    background-position: 0 -128px;
+}
+
+ul.rating li.four a:hover {
+    background-position: 0 -144px;
+}
+
+ul.rating li.five a:hover {
+    background-position: 0 -160px;
+}
+
+/* footer */
+#footer {
+    width: 990px;
+    margin: 0 auto;
+    padding: 18px 0;
+
+    text-align: center;
+
+    color: #666;
+}
+#basic-dialog-ok{
+    display: none;
+}
+
+/* tooltip */
+#tooltip {
+    position: absolute;
+
+    display: none;
+
+    padding: 1px;
+
+    color: #333;
+    border: 1px solid #333;
+    background: #f7f5d1;
+}
+
+/* imgHover */
+.imageMask {
+    cursor: pointer;
+
+    opacity: 0;
+    background-color: #fff;
+
+    filter: alpha(opacity=0);
+}
+
+.imageOver {
+    opacity: .6;
+    background: url(../images/zoom.gif) no-repeat 50% 50%;
+
+    filter: alpha(opacity=60);
+}
+
+/* jquery zoom */
+.zoomPad {
+    position: relative;
+    z-index: 99;
+
+    float: left;
+
+    cursor: crosshair;
+}
+
+.zoomPreload {
+    font-family: "宋体",sans-serif;
+    font-size: 12px;
+
+    position: absolute;
+    z-index: 110;
+    top: 0;
+    left: 0;
+
+    width: 90px;
+    height: 43px;
+    padding: 8px;
+
+    text-align: center;
+    text-decoration: none;
+
+    opacity: .8;
+    color: #333;
+    border: 1px solid #ccc;
+    background-color: white;
+    background-image: url(../images/zoomloader.gif);
+    background-repeat: no-repeat;
+    background-position: 43px 30px;
+
+    -moz-opacity: .8;
+    filter: alpha(opacity=80);
+    *width: 100px;
+    *height: 49px;
+}
+
+.zoomPup {
+    position: absolute;
+    z-index: 120;
+    z-index: 101;
+
+    overflow: hidden;
+
+    cursor: crosshair;
+
+    opacity: .6;
+    border: 1px solid #ccc;
+    background-color: #fff;
+
+    -moz-opacity: .6;
+    filter: alpha(opacity=60);
+}
+
+.zoomOverlay {
+    position: absolute;
+    /*opacity:0.5;*/
+    z-index: 5000;
+    z-index: 101;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    background: #fff;
+}
+
+.zoomWindow {
+    position: absolute;
+    z-index: 6000;
+    z-index: 10000;
+    z-index: 110;
+    top: 40px;
+    left: 110%;
+
+    height: auto;
+
+    background: #fff;
+}
+
+.zoomWrapper {
+    position: relative;
+    z-index: 110;
+
+    border: 1px solid #999;
+}
+
+.zoomWrapperTitle {
+    font-size: 12px;
+    line-height: 18px;
+
+    position: absolute;
+    z-index: 120;
+    top: 0;
+    left: 0;
+
+    display: block;
+    overflow: hidden;
+
+    width: 100%;
+    height: 18px;
+
+    text-align: center;
+
+    opacity: .6;
+    color: #fff;
+    background: #999;
+
+    -moz-opacity: .6;
+    filter: alpha(opacity=60);
+}
+
+.zoomWrapperImage {
+    position: relative;
+    z-index: 110;
+
+    display: block;
+    overflow: hidden;
+}
+
+.zoomWrapperImage img {
+    position: absolute;
+    z-index: 101;
+
+    display: block;
+
+    border: 0;
+}
+
+.zoomIframe {
+    position: absolute;
+    z-index: -1;
+
+    display: block;
+
+    opacity: .80;
+
+    filter: alpha(opacity=0);
+    -moz-opacity: .80;
+}
